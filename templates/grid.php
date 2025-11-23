@@ -62,7 +62,7 @@ $video_classes = apply_filters( 'yotu_video_classes', array( 'yotu-video' ), $se
 						<?php endif; ?>
 						<?php do_action( 'yotuwp_after_title', $videoId, $video ); ?>
 						<?php if ( isset( $settings['description'] ) && $settings['description'] == 'on' ) : ?>
-							<div class="yotu-video-description"><?php wp_kses_post( $_desc ); ?></div>
+							<div class="yotu-video-description"><?php echo wp_kses_post( $_desc ); ?></div>
 						<?php endif; ?>
 					</a>
 					<?php do_action( 'yotuwp_after_link', $videoId, $video ); ?>
